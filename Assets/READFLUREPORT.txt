@@ -1,0 +1,98 @@
+
+============================TESTE===========================================
+RODRIGO ALVES DE MORAES, PROGRAMMER.
+TASK 1: 
+============================SPEED===========================================
+A variável que altera a velocidade de tiro dos 
+inimigos está publica no "ControlGames"
+
+TASK2:
+============================DODGE===========================================
+Há uma boolena publica que controla quem será "invulnerável" (Dodge)
+Toda vez que o player atira, a tag do tiro muda para "PlayerShot", 
+assim faço a detecção da tag no enemy que valida se é invuneravel 
+ou não ao tiro do player. O inimigo com habilidade de Dogde fica azul.
+
+Dentro do script "Enemy"(asteroid), quando o inimigo é atingido e ele 
+está marcado como dodge, a cor do sprite fica AZUL, Fiz isso para
+ter pelo menos um indicador visual de feedback.
+
+TASK3 
+============================SAVE========================================================
+
+Criei uma nova classe no script "ControlGame", essa classe é responsável
+por salvar e carregar as informações do jogo.
+
+Para fazer a detecção se há ou não continue eu ultizei o playerprefs
+para ajudar a determinar os botões que aparecem na tela de inicio.
+
+TASK 4
+========================GHOST PLAYER========================================================
+
+
+Instanciei uma copia do player no script "controlShip", que atraves da booleana
+isGhost, gerencia entre o player e o fantasma, o fantasma segue a posição do
+player, no entatanto tem o mesmo giro, os tiros são diferente.
+
+TASK 5
+===========================SHIELD========================================================
+
+Deixei o shield ativa ja com 3 vidas no começo.
+
+Task 6
+===========================PAUSE========================================================
+Bom, nas instruções diz que quando der gameover é para criar um botão
+que volte de onde o jogador parou, levando em consideração que 
+quando dá gameover é porque o jogador morreu, eu adicionei
+dois botões, um de Restart, que volta tudo desde o começo, e outro de
+continue, que dá mais uma vida para o player.
+
+Task 7
+===========================UWP========================================================
+Tive alguns problemas, mas no fim deu bom!
+
+Exportei nas 3 versões xaml, 3d3, e Windowns.
+Link:
+
+https://drive.google.com/file/d/1Z8vXndYVh4aJaZyoMqCEh1bR2VnvpVMI/view?usp=sharing
+
+
+====================Ajustes/Correções========================================================
+
+-Eu ajustei um erro que estava dando no codigo "EnemyControl", 
+na linha 105,perdia referencia quando o player morria.
+
+-Fiz um script chamo "Pause", que desativa o comando pause e 
+faz um HeartBeat;
+
+-Mudei o tipo de collisor dos inimigos e do player para trigger, 
+ei tirei o trigger de frindly fire entre os inimigos.
+
+Aumentei o tamanho do trigger do tiro, pois estava muito
+pequeno, oque prejudicava detecção de colisão.
+
+Adicionei box collider aos destroços.
+
+
+-O player começa com uma shield de 3 vidas.
+Alterei a velocidade do player.
+
+-Dividi o canvas em 2, um para o jogo e outro
+para a hud, pois os bots e o player estavam
+em cima da hud.
+
+
+
+
+
+
+
+
+
+By Rodrigo Alves de Moraes, applicant; 15/10/21
+
+
+
+
+
+
